@@ -5,7 +5,7 @@ Do not use indexOf to solve this! This function should use recursion.
 */
 
 function linearSearchRecursive(array, value, index=0) {
-    if(array.length <= index) {
+    if(index >= array.length) {
         return -1
     }
     else if (array[index] === value) {
