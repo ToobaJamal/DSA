@@ -5,7 +5,7 @@ Do not use indexOf to solve this! This function should use iteration not recursi
 
 function binarySearch(array, value) {
     let midIndex 
-    let index
+    let index = -1
     const nums = array.sort((a, b) => a - b)
     midIndex = Math.floor(nums.length / 2)
     if(array[midIndex] === value) {
